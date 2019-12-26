@@ -1,0 +1,45 @@
+\documentclass[a4paper, oneside, openany,12pt]{article}
+
+% Margini
+\usepackage[top=3.1cm, bottom=3.1cm, left=2.2cm, right=2.2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhf{}
+\pagestyle{fancy}
+\lhead{Stage}
+\rhead{}
+\rfoot{Pagina \thepage{} di \pageref{LastPage}}
+
+
+\usepackage{graphicx} 		% per immagini
+\usepackage{caption}        %numerazione figure e loro descrizione testuale
+\usepackage{subcaption}  %sottofigure numerabili
+\usepackage{color}
+\usepackage{listings}
+\lstloadlanguages{bash}
+
+\title{\textbf{Appunti stage}}
+\author{Lisa Parma}
+
+\begin{document}
+	
+\begin{titlepage}
+	\begin{center}
+	
+		\textbf{Università degli Studi di Padova \\ Corso di laurea in Informatica}
+		\vspace{1cm}
+		\begin{center}
+		\begin{Huge}
+			\textbf{Qualcosa} \\
+		\end{Huge}
+	\end{center}
+	\end{center}
+\end{titlepage}
+
+\tableofcontents
+\include{res/listOfSections}
+
+\end{document}
