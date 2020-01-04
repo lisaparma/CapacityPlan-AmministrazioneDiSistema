@@ -1,0 +1,113 @@
+\newpage
+
+\section{Scenario aziendale} \label{ref:scenario}
+	L'instituto ospedaliero Gaetano Pini si presenta come un istituto specializzato nella cura e nella riabilitazione di malattie ortopediche impegnato anche nella didattica e nella ricerca universitaria. \\Ad oggi per svolgere a pieno i propri compiti l'istituto si affida a dei sistemi informatici che sono riassunti in questo paragrafo.
+	Sarà così raccolta una fotografia della situazione informatica dell'istituto, riassumendo i dati più significativi e associandoli tra di loro in modo da ottenere tutte le informazioni utili al fine di svolgere un'analisi il più completa possibile.
+	
+	\subsection{Dati generali}
+	La tabella \ref{tab:attivitaMediche} riassume le principali attività mediche svolte dall'istituto spericifando i numeri e suddividendole per categoria. \\
+	Da questi dati notiamo che l’istituto è chiaramente focalizzato sulla specializzazione ortopedica-traumatologica e sui successivi servizi di riabilitazione, e i servizi e le tecnologie che si prestano allo svolgimento di attività indispensabili o utili per questi saranno chiaramente considerati maggiormente nell'analisi. \\
+	\begin{table}[h] 
+		\centering
+		\begin{tabular}{|l|l|}
+			\hline
+			\rowcolor[HTML]{EFEFEF} 
+			\textbf{Dati attività mediche} & \\ \hline
+			\textbf{N. posti letto totali}					& \textbf{490} \\
+			- Ordinari 							& 460 \\
+			- Day Hospital 					& 30 	\\ \hline
+			\textbf{Ricoveri (mensili)}  				& \textbf{1950}			\\
+			- Ortopedia e traumatologia   & 1073 \\
+			- Recupero e riabilitazione 	& 134 \\
+			- Reumatologia 						& 719 \\
+			- Chirurgia vascolare  				& 24 \\ \hline
+			\textbf{Prestazioni (mensili)}	  			& \textbf{12.518}		\\
+			- Ortopedia e traumatologia   & 2842 \\
+			- Recupero e riabilitazione 	& 8137 \\
+			- Reumatologia 						& 1426 \\
+			- Chirurgia vascolare  				& 113 \\ \hline
+			Attività chirurgiche (annuali)  & 14.400		\\ \hline
+		\end{tabular}
+	\caption{Riassunto dati attività mediche}\label{tab:attivitaMediche}
+	\end{table}
+	\\ \\
+	\subsection{Sistemi applicativi esistenti}
+	La seguente tabella descrive i servizi applicativi centralizzati tutt’ora utilizzati per far fronte alle attività dell’istituto. \\
+	Ogni riga della tabella contiene un applicativo e per ogni uno viene specificato:
+	\begin{itemize}
+		\item criticità, indicata con un numero che va da 1 a 5 e definita dall'istituto,;
+		\item numero di utenti totali che utilizzano quel determinato applicativo;
+		\item numero di utenti che utilizzano quell'applicativo in contemporanea;
+		\item servizio per il quale quell'applicativo viene utilizato;
+		\item criticità del servizio indicata con un numero che va da 1 a 5.
+	\end{itemize}
+	\begin{table}[h]
+		\begin{tabular}{|c|C{3cm}| C{2cm} |C{1.5cm} |C{2cm} | C{3cm} | C{2cm}|}
+			\hline
+			\rowcolor[HTML]{EFEFEF} 
+			\textbf{N} & \textbf{Sistema applicativo}  & \textbf{Criticità (1-5)} & \textbf{N. utenti} & \textbf{N. utenti attivi}  & \textbf{Servizio} & \textbf{Criticità servizio (1-5)}\\ \hline
+			1  & Archivio Clinico		& 4		& 15	& 10 		& Gestione archivio clinico & 4		\\ \hline
+			2  & Argos						& 4		& 5	 		& 2 		& Valorizzazione dei DRG & 3		\\ \hline
+			3  & Armonia					& 4		& 6		& 3 		& Gestione anatomia patologica & 4		\\ \hline
+			4  & Emonet						& 4		& 10	& 2 		& Gestione produzione emoderivanti & 5		\\ \hline
+			5  & Aurora Web				& 2		& 650	& 100 		& Gestione pazienti  & 5		\\ \hline
+			6  & Gst\_est					& 2		& 650	& 20 		&  & 		\\ \hline
+			7  & Gst\_fat					& 2		& 6			& 4 		& Gestione fatturazione & 4		\\ \hline
+			8  & Pacs						& 2		& 49		& 20 		& Gestione diagnostica per immagini & 5	\\ \hline
+			9  & Elefante					& 2		& 49		& 20 		&  & 		\\ \hline
+			10  & Ormawin2000		& 4		& 6			& 3 		& Gestione sale operatorie / materiale protesico & 3		\\ \hline
+		\end{tabular}
+	\end{table}
+
+	\begin{table}[h]
+	\begin{tabular}{|c|C{3cm}| C{2cm} |C{1.5cm} |C{2cm} | C{3cm} | C{2cm}|}
+		\hline
+		\rowcolor[HTML]{EFEFEF} 
+		\textbf{N} & \textbf{Sistema applicativo}  & \textbf{Criticità (1-5)} & \textbf{N. utenti} & \textbf{N. utenti attivi}  & \textbf{Servizio} & \textbf{Criticità servizio (1-5)}\\ \hline
+		11  & PowerLab				& 2		& 10		& 5 		& Gestione laboratorio analisi & 5		\\ \hline
+		12  & Rap						& 3		& 6			& 4 		& Gestione fatturazione & 4		\\ \hline
+		13  & Ican						& 2		& 350 		& 100 		& Piattaforma SISS & 4		\\ \hline
+		14  & Aliseo					& 4		& 20 		& 5 		& Gestione delle risorse umane & 4	\\ \hline
+		15  & Enco						& 4		& 43 		& 20 		& Gestione amministrazione e magazzini & 4	\\ \hline
+		16  & Teseo						& 2		& 10 		& 2 		&  & 	\\ \hline
+		17  & Protocollo			& 3		& 15 		& 5 		& Gestione protocollo & 3	\\ \hline
+	\end{tabular}
+	\caption{Riassunto applicativi esistenti}\label{tab:applicativi}
+	\end{table}
+
+	La tabella \ref{tab:applicativi} ... mmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm 
+	\\ \\ \\ \\ \\
+	
+	
+	
+	\subsection{Infrastrutture tecnologiche esistenti}
+
+	\begin{table}[h]
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		\rowcolor[HTML]{EFEFEF} 
+		\textbf{N} & \textbf{Sistema applicativo}  & \textbf{Criticità} & \textbf{Numero utenti} \\ \hline
+		1  & Router internet	& 4		& 15		\\ \hline
+		2  & Argos		& 4		& 5		\\ \hline
+		3  & Armonia		& 4		& 6		\\ \hline
+		4  & Emonet				& 4		& 10		\\ \hline
+		5  & Aurora Web		& 2		& 650		\\ \hline
+		6  & Gest\_est			& 2		& 650		\\ \hline
+		7  & GES\_fat			& 2		& 6		\\ \hline
+		8  & Pacs		& 2		& 49		\\ \hline
+		9  & Elefante		& 2		& 49		\\ \hline
+		10  & Oemawin200		& 4		& 6		\\ \hline
+		11  & PowerLab						& 2		& 10		\\ \hline
+		12  & Rap				& 3		& 6		\\ \hline
+		13  & Ican		& 2		& 350 	\\ \hline
+		14  & Aliseo			& 2		& 350 	\\ \hline
+		15  & Enco		& 2		& 350 	\\ \hline
+		16  & Teseo			& 2		& 350 	\\ \hline
+		17  & Protocollo			& 2		& 350 	\\ \hline
+	\end{tabular}
+	\caption{Riassunto applicativi esistenti}\label{tab:tecnologie}
+	\end{table}
+
+La tabella \ref{tab:tecnologie} ... mmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm 
+
+	
