@@ -31,6 +31,9 @@
 	\caption{Riassunto dati attività mediche}\label{tab:attivitaMediche}
 	\end{table}
 	\\ \\
+	
+	
+	
 	\subsection{Sistemi applicativi esistenti}
 	La seguente tabella descrive i servizi applicativi centralizzati tutt’ora utilizzati per far fronte alle attività dell’istituto. \\
 	Ogni riga della tabella contiene un applicativo e per ogni uno viene specificato:
@@ -75,39 +78,70 @@
 	\caption{Riassunto applicativi esistenti}\label{tab:applicativi}
 	\end{table}
 
-	La tabella \ref{tab:applicativi} ... mmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm 
-	\\ \\ \\ \\ \\
+	Dalla tabella \ref{tab:applicativi}, in cui sono state associate diverse informazioni per ogni applicativo esistente fornitoci dall'RFP dell'azienda, possiamo ricavare molte informazioni utili per la prossima analisi. \\
+	Dall'associazione dei sistemi applicativi utilizzati con il relativo servizio soddisfatto possiamo notare che non sempre il livello di criticità corrisponde. In particolare, nel caso in cui la criticità del sistema applicativo sia inferiore rispetto a quella del servizio soddisfatto, è bene considerare la criticità maggiore per non rischiare di sottostimare applicativi importanti per il business dell'azienda. \\
+	Ulteriore attenzione avranno applicativi riguardanti l'area sanitaria, area di particolare criticità non solo perchè rappresenta il servizio principale fornito dalla struttura ma anche perchè risulta importante a livello umanitario rispetto ad applicativi utilizzati nell'area amministrativa. \\
+	Alcuni applicativi di criticità abbastanza bassa sembrano non avere un servizio definito a cui rispondono. Nella presente analisi verranno trattati semplicemente come servizi non critici ma per le prossime revisioni è bene discutere con l'istituto del loro reale impiego per essere sicuri che l'analisi svolta sia del tutto conforme alla realtà. \\ \\ \\
 	
 	
+
 	
 	\subsection{Infrastrutture tecnologiche esistenti}
-
-	\begin{table}[h]
-	\begin{tabular}{|l|l|l|l|l|}
+	La tabella sottostante descrive invece i servizi di infrastruttura utilizzati dall’istituto. \\
+	Ogni riga della tabella contiene una tecnologia e per ogni una viene specificato:
+	\begin{itemize}
+		\item criticità, indicata con un numero che va da 1 a 5 e definita dall'istituto;
+		\item numero di utenti che utilizzano quella tecnologia in contemporanea;
+		\item servizio per il quale viene utilizata;
+		\item criticità del servizio indicata con un numero che va da 1 a 5.
+	\end{itemize}
+	\begin{table}[h!]
+		\begin{tabular}{|c|C{3cm}| C{2cm} |C{2.5cm}| C{3cm} | C{2cm}|}
 		\hline
 		\rowcolor[HTML]{EFEFEF} 
-		\textbf{N} & \textbf{Sistema applicativo}  & \textbf{Criticità} & \textbf{Numero utenti} \\ \hline
-		1  & Router internet	& 4		& 15		\\ \hline
-		2  & Argos		& 4		& 5		\\ \hline
-		3  & Armonia		& 4		& 6		\\ \hline
-		4  & Emonet				& 4		& 10		\\ \hline
-		5  & Aurora Web		& 2		& 650		\\ \hline
-		6  & Gest\_est			& 2		& 650		\\ \hline
-		7  & GES\_fat			& 2		& 6		\\ \hline
-		8  & Pacs		& 2		& 49		\\ \hline
-		9  & Elefante		& 2		& 49		\\ \hline
-		10  & Oemawin200		& 4		& 6		\\ \hline
-		11  & PowerLab						& 2		& 10		\\ \hline
-		12  & Rap				& 3		& 6		\\ \hline
-		13  & Ican		& 2		& 350 	\\ \hline
-		14  & Aliseo			& 2		& 350 	\\ \hline
-		15  & Enco		& 2		& 350 	\\ \hline
-		16  & Teseo			& 2		& 350 	\\ \hline
-		17  & Protocollo			& 2		& 350 	\\ \hline
+		\textbf{N.} & \textbf{Sistema}  & \textbf{Criticità (1-5)} & \textbf{N. utenti / accessi contemporanei} & \textbf{Servizio} & \textbf{Criticità servizio (1-5)}\\ \hline
+		1  & Router internet	& 4		& 200 & Accesso internet & 5		\\ \hline
+		2 & NETASQ F1000 & 3 & 200 & Firewall & 5 \\ \hline
+		3 & DNS & 2  & 250 & Risoluzione nomi & 5 \\ \hline
+		4 & WINS  & 2 & 250 & Risoluzione nomi & 5 \\ \hline
+		5 & EXCHANGE & 3  & 150 & Posta elettronica & 5 \\ \hline
+		6 & DHCP  & 2 &  250 & Distribuzione indirizzi IP & 5\\ \hline
+		7 & NTP  &3 & 250 & Distribuzione tempo & 5\\ \hline
+		8 & PORTA APPLICATIVA & 2  & 50 & Accesso SISS & 5 \\ \hline
+		9 & ORACLE & 1 &  250 & Condivisione dati & 5 \\ \hline
+		10 & BACKUP & 4 &  NA & Gestione backup & 4 \\ \hline
+		11 & ACCESSI REMOTO & 3 &  5 & Gestione accessi remoto & 4 \\ \hline
+		12 & REPOSITORY & 3 &  100 & Gestione referti & 5 \\ \hline
 	\end{tabular}
-	\caption{Riassunto applicativi esistenti}\label{tab:tecnologie}
+	\caption{Riassunto tecnologie esistenti}\label{tab:tecnologie}
 	\end{table}
 
-La tabella \ref{tab:tecnologie} ... mmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm 
+Anche nella tabella \ref{tab:tecnologie} notiamo che non sempre il livello di criticità corrisponde tra la tecnologia utilizzata e il servizio che soddisfa e, come è avvenuto per gli applicativi,  nel caso in cui la criticità della tecnologia sia inferiore rispetto a quella del servizio soddisfatto, considereremo più rilevante la criticità maggiore per non sottostimare la reale criticità. \\
 
+
+Riassumiamo inoltre nella tabella \ref{tab:infrastruttureGenerali} ulteriori tecnologie disponibili idonee soltanto per l’attuale carico di attività:
+\begin{table}[h] 
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		\rowcolor[HTML]{EFEFEF} 
+		\textbf{Infrastruttura} & \\ \hline
+		\textbf{N. server totali}					& \textbf{55} \\
+		- Criticità 5 				& 12 \\
+		- Criticità 4				& 30 \\
+		- Criticità 3				& 10 	\\
+		- Criticità 2				& 1 	\\ 
+		- Criticità 1				& 2 	\\  \hline
+		\textbf{N. apparecchiature di rete}  				& \textbf{28}			\\\hline
+		\textbf{N. terminali rilevazione presenze}	  			& \textbf{11}		\\\hline
+		\textbf{N. terminali controllo accessi}	  			& \textbf{2}		\\\hline
+		\textbf{N. Postazioni}					& \textbf{480} \\
+		- Sistema Operativo Windows XP Sp2 & \\
+		- Antivirus eTrust V. 7.1 & \\
+		- SISS v. 9.X.X & \\
+		- Sissway & \\
+		- MS Office & \\  \hline
+	\end{tabular}
+	\caption{Riassunto ulteriori tecnologie utilizzate}\label{tab:infrastruttureGenerali}
+\end{table}
 	
