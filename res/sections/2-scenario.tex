@@ -30,19 +30,17 @@
 		\end{tabular}
 	\caption{Riassunto dati attività mediche}\label{tab:attivitaMediche}
 	\end{table}
-	\\ \\
-	
-	
+
 	
 	\subsection{Sistemi applicativi esistenti} \label{ref:scenario.applicativi}
-	La seguente tabella descrive i servizi applicativi centralizzati tutt’ora utilizzati per far fronte alle attività dell’istituto. \\
+	La seguente tabella descrive i servizi applicativi centralizzati tutt’ora utilizzati per far fronte alle attività dell’istituto. \\\\
 	Ogni riga della tabella contiene un applicativo e per ogni uno viene specificato:
 	\begin{itemize}
 		\item criticità, indicata con un numero che va da 1 a 5 e definita dall'istituto,;
 		\item numero di utenti totali che utilizzano quel determinato applicativo;
 		\item numero di utenti che utilizzano quell'applicativo in contemporanea;
 		\item servizio per il quale quell'applicativo viene utilizato;
-		\item criticità del servizio indicata con un numero che va da 1 a 5.
+		\item criticità del servizio indicata con un numero che va da 1 a 5.\\
 	\end{itemize}
 	\begin{table}[h]
 		\begin{tabular}{|c|C{3cm}| C{2cm} |C{1.5cm} |C{2cm} | C{3cm} | C{2cm}|}
@@ -58,7 +56,6 @@
 			7  & Gst\_fat					& 2		& 6			& 4 		& Gestione fatturazione & 4		\\ \hline
 			8  & Pacs						& 2		& 49		& 20 		& Gestione diagnostica per immagini & 5	\\ \hline
 			9  & Elefante					& 2		& 49		& 20 		&  & 		\\ \hline
-			10  & Ormawin2000		& 4		& 6			& 3 		& Gestione sale operatorie / materiale protesico & 3		\\ \hline
 		\end{tabular}
 	\end{table}
 
@@ -67,6 +64,7 @@
 		\hline
 		\rowcolor[HTML]{EFEFEF} 
 		\textbf{N} & \textbf{Sistema applicativo}  & \textbf{Criticità (1-5)} & \textbf{N. utenti} & \textbf{N. utenti attivi}  & \textbf{Servizio} & \textbf{Criticità servizio (1-5)}\\ \hline
+		10  & Ormawin2000		& 4		& 6			& 3 		& Gestione sale operatorie / materiale protesico & 3		\\ \hline
 		11  & PowerLab				& 2		& 10		& 5 		& Gestione laboratorio analisi & 5		\\ \hline
 		12  & Rap						& 3		& 6			& 4 		& Gestione fatturazione & 4		\\ \hline
 		13  & Ican						& 2		& 350 		& 100 		& Piattaforma SISS & 4		\\ \hline
@@ -78,14 +76,13 @@
 	\caption{Riassunto applicativi esistenti}\label{tab:applicativi}
 	\end{table}
 
+\newpage
 	Dalla tabella \ref{tab:applicativi}, in cui sono state associate diverse informazioni per ogni applicativo esistente fornitoci dall'RFP dell'azienda, possiamo ricavare molte informazioni utili per la prossima analisi. \\
 	Dall'associazione dei sistemi applicativi utilizzati con il relativo servizio soddisfatto possiamo notare che non sempre il livello di criticità corrisponde. In particolare, nel caso in cui la criticità del sistema applicativo sia inferiore rispetto a quella del servizio soddisfatto, è bene considerare la criticità maggiore per non rischiare di sottostimare applicativi importanti per il business dell'azienda. \\
 	Ulteriore attenzione avranno applicativi riguardanti l'area sanitaria, area di particolare criticità non solo perchè rappresenta il servizio principale fornito dalla struttura ma anche perchè risulta importante a livello umanitario rispetto ad applicativi utilizzati nell'area amministrativa. \\
-	Alcuni applicativi di criticità abbastanza bassa sembrano non avere un servizio definito a cui rispondono. Nella presente analisi verranno trattati semplicemente come servizi non critici ma per le prossime revisioni è bene discutere con l'istituto del loro reale impiego per essere sicuri che l'analisi svolta sia del tutto conforme alla realtà. \\ \\ \\
-	
+	Alcuni applicativi di criticità abbastanza bassa sembrano non avere un servizio definito a cui rispondono. Nella presente analisi verranno trattati semplicemente come servizi non critici ma per le prossime revisioni è bene discutere con l'istituto del loro reale impiego per essere sicuri che l'analisi svolta sia del tutto conforme alla realtà.
 	
 
-	
 	\subsection{Infrastrutture tecnologiche esistenti} \label{ref:scenario.tecnologie}
 	La tabella sottostante descrive invece i servizi di infrastruttura utilizzati dall’istituto. \\
 	Ogni riga della tabella contiene una tecnologia e per ogni una viene specificato:
@@ -116,6 +113,7 @@
 	\caption{Riassunto tecnologie esistenti}\label{tab:tecnologie}
 	\end{table}
 
+\newpage
 Anche nella tabella \ref{tab:tecnologie} notiamo che non sempre il livello di criticità corrisponde tra la tecnologia utilizzata e il servizio che soddisfa e, come è avvenuto per gli applicativi,  nel caso in cui la criticità della tecnologia sia inferiore rispetto a quella del servizio soddisfatto, considereremo più rilevante la criticità maggiore per non sottostimare la reale criticità. \\
 
 

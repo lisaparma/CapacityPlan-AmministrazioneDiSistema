@@ -37,24 +37,24 @@ parte degli utenti attuale e quello previsto per il prossimo anno, il numero di 
 	\begin{tabular}{|c|C{3cm}|| C{1.5cm} |C{1.5cm} ||C{1.5cm} | C{1.5cm} || C{1.5cm}| C{1.5cm}|}
 		\hline
 		\rowcolor[HTML]{EFEFEF} 
-		\textbf{N} & \textbf{Sistema applicativo}  & \textbf{N. utenti} & \textbf{N. utenti previsti} & \textbf{N. utenti attivi}  & \textbf{N. utenti attivi previsti} & \textbf{Performance di servizio} & Performance di servizio previste \\ \hline
-		1  & Archivio Clinico		& 15	& 	& 10	&0  &0	&0	\\ \hline
-		2  & Argos			        	&5	&	& 2	&  &	&	\\ \hline
-		3  & Armonia					&6	& 	& 3	&  &	&	\\ \hline
-		4  & Emonet						& 10	& 	&2	& &		&	\\ \hline
-		5  & Aurora Web				& 650	& 	&100	&  &	&		\\ \hline
-		6  & Gst\_est					& 650	& 	& 20	&  &	& 		\\ \hline
-		7  & Gst\_fat					& 6	&	&4	&  & 	&	\\ \hline
-		8  & Pacs						& 49	&	& 20	&	& 	&	\\ \hline
-		9  & Elefante					& 49	&	& 20	&  &	& 		\\ \hline
-		10  & Ormawin2000		& 6	&	& 3	&  & 	& 		\\ \hline
-		11  & PowerLab				& 10	&	& 5	&  &	& 		\\ \hline
-		12  & Rap						& 6	&	&	4&  &	& 		\\ \hline
-		13  & Ican						& 350	&	&100	&  &	& 		\\ \hline
-		14  & Aliseo					& 20	&	&5	&  &	& 		\\ \hline
-		15  & Enco					& 43	&	&20	&  &	& 		\\ \hline
-		16  & Teseo						& 10	&	&2	&  &	& 		\\ \hline
-		17  & Protocollo			& 15	&	& 5	&  &	& 		\\ \hline
+		\textbf{N} & \textbf{Sistema applicativo}  & \textbf{N. utenti} & \textbf{N. utenti previsti} & \textbf{N. utenti attivi}  & \textbf{N. utenti attivi previsti} & \textbf{Performance di servizio} & \textbf{Performance di servizio previste} \\ \hline
+		1  & Archivio Clinico		& 15	& 20	& 10	& 13  & 80\%	& 90\%	\\ \hline
+		2  & Argos			        	&5	& 8	& 2	& 4 & 70\%	& 85\%	\\ \hline
+		3  & Armonia					&6	& 8	& 3	& 4 & 90\%	& 95\%	\\ \hline
+		4  & Emonet						& 10	& 15	&2	& 3 &	85\%	& 90\%	\\ \hline
+		5  & Aurora Web				& 650	& 800	&100	& 150 &	 85\% &	90\%	\\ \hline
+		6  & Gst\_est					& 650	& 800	& 20 & 35 &	80\%& 	85\%	\\ \hline
+		7  & Gst\_fat					& 6	&	8 &4	& 6 & 70\%	& 80\%	\\ \hline
+		8  & Pacs						& 49	& 55	& 20	& 30	& 90\%	& 95\%	\\ \hline
+		9  & Elefante					& 49	& 60	& 20	& 35 &	85 & 	95\%	\\ \hline
+		10  & Ormawin2000		& 6	& 8	& 3	& 4 & 75\%	& 	85\%	\\ \hline
+		11  & PowerLab				& 10	& 15	& 5	& 7 & 90\%	& 	95\%	\\ \hline
+		12  & Rap						& 6	& 7	&	4& 5 &80\%	& 90\%		\\ \hline
+		13  & Ican						& 350	& 450	&100	& 150 &	80\%& 	90\%	\\ \hline
+		14  & Aliseo					& 20	& 35	&5	& 12 & 90\%	& 	95\%	\\ \hline
+		15  & Enco					& 43	& 50	&20	& 25 & 75\%	& 	85\%	\\ \hline
+		16  & Teseo						& 10	& 15	&2	& 5 & 70\%	& 	\%85	\\ \hline
+		17  & Protocollo			& 15	& 20	& 5	& 10 & 85\%	& 	90\%	\\ \hline
 	\end{tabular}
 \caption{Analisi servizi IT}\label{tab:analisiServizi}
 \end{table}
@@ -64,69 +64,63 @@ parte degli utenti attuale e quello previsto per il prossimo anno, il numero di 
 In questa sezione vengono analizate le infrastrutture tecnologiche esistenti e le loro performance che sono stati descritti nella sezione \ref{ref:scenario.tecnologie}, basandoci sulle previsioni fatte. \\
 	\subsubsection{Presupposti}
 	Le performace analizzate in questa sezione riguardano l'utilizzo medio dei servizi da parte degli utenti (e quindi delle varie tecnologie), senza considerare quindi picchi improvvisi e sovraccarichi, incidenti o malfunzionamenti hardware o software.
-\subsubsection{Previsioni}
+	
+\subsubsection{Calcolo delle stime}
+Per calcolare le performance delle tecnologie IT sono stati considerati vari parametri di seguito definiti:
+\paragraph{CPU}
+Il calcolo del numero di unità di CPU necessarie è stato fatto in base al numero di utenti medio giornaliero:\\
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{./img/cpu}
+\end{figure}
 
-	\paragraph{Sistemi tecnologici}
-		\textcolor{red}{ ... \\  ... \\ ... \\ ... \\  ... \\ ... \\ }
-	\begin{table}[h!]
-		\begin{tabular}{|c|C{3cm} || C{1.5cm} |C{1.5cm} || C{1.5cm} |C{1.5cm}|| C{1.5cm} |C{1.5cm}|}
-			\hline
-			\rowcolor[HTML]{EFEFEF} 
-			\textbf{N.} & \textbf{Sistema}  & \textbf{CPU attuale} & \textbf{CPU prevista} & \textbf{RAM attuale} & \textbf{RAM prevista} & \textbf{Storage attuale} & \textbf{Storage previsto} \\ \hline
-			1  & Router internet	& 	&  &   &  &	 & \\ \hline
-			2 & NETASQ F1000 & 	&  &   &  &	 & \\ \hline
-			3 & DNS & 	&  &   &  &	 & \\ \hline
-			4 & WINS  & 	&  &   &  &	 & \\ \hline
-			5 & EXCHANGE & 	&  &   &  &	 & \\ \hline
-			6 & DHCP  & 	&  &   &  &	 & \\ \hline
-			7 & NTP  & 	&  &   &  &	 & \\ \hline
-			8 & PORTA APPLICATIVA & 	&  &   &  &	 & \\ \hline
-			9 & ORACLE & 	&  &   &  &	 & \\ \hline
-			10 & BACKUP & 	&  &   &  &	 & \\ \hline
-			11 & ACCESSI REMOTO & 	&  &   &  &	 & \\ \hline
-			12 & REPOSITORY & 	&  &   &  &	 & \\ \hline
-		\end{tabular}
-		\caption{Analisi tecnologie IT}\label{tab:analisiTecnologie}
-	\end{table}
+\paragraph{RAM}
+La quantità di RAM da allocare ed è stata
+decisa in base alla complessità del servizio nel quale viene utilizzata.
+
+\paragraph{Storage}
+La quantità di spazio di archiviazione invece è stata calcolato stimando la dimensione media dei file e il numero di utenti che utilizzano quel determinato servizio. \\
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{./img/archivio}
+\end{figure}
+
+\subsubsection{Previsioni}
+	Le stime di incremento della capacità necessarie a garantire quanto concordato nei SLA sono state fatte rispetto all’incremento delle utenze per l'aumento dei dipendenti e dei pazienti previsto nel prossimo anno.
+In particolare è stato rilevato un aumento del:
+\begin{itemize}
+	\item 5\% di capacità computazionale (RAM) media;
+	\item 10\% di memoria per unità computazionale;
+	\item 10\% di archiviazione per i servizi.
+\end{itemize}
+È quindi necessario incrementare conseguentemente la capacità dell’infrastruttura
+concordemente alle percentuali di incremento calcolate.
 
 
 	\paragraph{Server}
-	\textcolor{red}{ ... \\  ... \\ ... \\ ... \\  ... \\ ... \\ }
-	\begin{table}[h!]
-		\begin{tabular}{|C{2cm} || C{1.5cm} |C{1.5cm} || C{1.5cm} |C{1.5cm}|| C{1.5cm} |C{1.5cm}||C{1.5cm} |C{1.5cm}|} 
+	Di seguito troviamo una tabella che riassume le attività di incremento delle quantità e delle performance dei server che si occupano di mantenere i servizi attivi.\\
+	In particolare per ogni tipologia di server abbiamo:
+	\begin{itemize}
+		\item Quantità di server presenti e tutt'ora e quantità prevista per ottenere le performace di servizio per gli applicativi analizzati nella tabella \ref{tab:analisiServizi};
+		\item numero di CPU attuali e previste nel piano;
+		\item RAM attuale e prevista;
+		\item storage attuale e previsto.
+	\end{itemize}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|C{2cm} || C{1.5cm} | C{1.5cm}|| C{1.5cm} |C{1.5cm} || C{1.5cm} |C{1.5cm}|| C{1.5cm} |C{1.5cm}|} 
 			\hline
 			\rowcolor[HTML]{EFEFEF} 
-			\textbf{Server}  & \textbf{CPU attuale} & \textbf{CPU prevista} & \textbf{RAM attuale} & \textbf{RAM prevista} & \textbf{Storage attuale} & \textbf{Storage previsto} & \textbf{Velocità accesso attuale} & \textbf{Velocità accesso previsto}\\ \hline
-			Router internet	& 	&  &   &  &	 & & & \\ \hline
+			\textbf{Server}  &\textbf{Quantità attuale} &\textbf{Quantità prevista} & \textbf{CPU attuale} & \textbf{CPU prevista} & \textbf{RAM attuale} & \textbf{RAM prevista} & \textbf{Storage attuale} & \textbf{Storage previsto} \\ \hline
+			Applicazione RAP & 2 & 3 & 2& 2& 32GB & 32GB & 512GB& 1TB \\ \hline
+			Disaster Recovery & 1 & 1 & 2 & 2& 16GB& 16GB &2TB&4TB\\ \hline
+			Test & 1 & 1& 2 &  2& 16GB& 32GB& 512GB&512GB\\ \hline
+			DataBase & 2 & 3 & 2 & 4 & 16 GB & 16GB & 2TB& 3TB\\ \hline
+			Application Server & 2 & 3 & 2 & 4 & 16GB&32GB & 244GB& 1TB\\ \hline
+			Porta Applicativa SISS & 2 & 3 & 2 & 2& 16GB & 16GB & 1TB& 2TB \\ \hline
 		\end{tabular}
 		\caption{Analisi server}\label{tab:analisiServer}
 	\end{table}
-
-
-	\paragraph{Servizi di rete}
-	\textcolor{red}{ ... \\  ... \\ ... \\ ... \\  ... \\ ... \\ }
-		\begin{table}[h!]
-		\begin{tabular}{|C{2cm} || C{1.5cm} |C{1.5cm} || C{1.5cm} |C{1.5cm}|| C{1.5cm} |C{1.5cm}||C{1.5cm} |C{1.5cm}|} 
-			\hline
-			\rowcolor[HTML]{EFEFEF} 
-			\textbf{Server}  & \textbf{CPU attuale} & \textbf{CPU prevista} & \textbf{RAM attuale} & \textbf{RAM prevista} & \textbf{Storage attuale} & \textbf{Storage previsto} & \textbf{Velocità accesso attuale} & \textbf{Velocità accesso previsto}\\ \hline
-			Router internet	& 	&  &   &  &	 & & & \\ \hline
-		\end{tabular}
-		\caption{Analisi servizi di rete}\label{tab:analisiRete}
-	\end{table}
-
-	\paragraph{Postazioni di lavoro}
-	\textcolor{red}{ ... \\  ... \\ ... \\ ... \\  ... \\ ... \\ }
-		\begin{table}[h!]
-		\begin{tabular}{|C{2cm} || C{1.5cm} |C{1.5cm} || C{1.5cm} |C{1.5cm}|| C{1.5cm} |C{1.5cm}||C{1.5cm} |C{1.5cm}|} 
-			\hline
-			\rowcolor[HTML]{EFEFEF} 
-			\textbf{Server}  & \textbf{CPU attuale} & \textbf{CPU prevista} & \textbf{RAM attuale} & \textbf{RAM prevista} & \textbf{Storage attuale} & \textbf{Storage previsto} & \textbf{Velocità accesso attuale} & \textbf{Velocità accesso previsto}\\ \hline
-			Router internet	& 	&  &   &  &	 & & & \\ \hline
-		\end{tabular}
-		\caption{Analisi postazioni di lavoro}\label{tab:analisiPostazioni}
-	\end{table}
-
 
 
 
