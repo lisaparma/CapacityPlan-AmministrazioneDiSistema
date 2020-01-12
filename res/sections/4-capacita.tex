@@ -9,6 +9,17 @@ Gli SLA definiti con l'azienda sono molto stringenti. In particolare è bene ten
 	\item per i servizi più critici il servizio dovrà essere disponibile 24/24.
 \end{itemize}
 
+\subsection{Modeling}
+	Raccogliere informazioni sull'utilizzo e le performance dei vari servizi e tecnologie utilizzate dall'azienda è indispensabile per  ottenere una corretta pianificazione delle capacità. \\
+	Questa attività è utilizzata a beneficio di molte attività, in particolare anche all'Availability Management. Per questo le descrizioni sottostanti sono riprese dal documento "Availability Plan" consegnato in allegato a questo documento.
+	\subsubsection{Monitoring}
+Utilizzando il monitoring ci assicuriamo che i servizi IT siano disponibili, eseguano in conformità con gli SLA e quindi mantengano il livello di servizio concordato. Nella sua forma base, un processo di monitoring invia un segnale ad un asset IT quale server, router, etc.. e si aspetta un segnale di ritorno per capire se la risorsa IT stia funzionando o meno.
+Ad un livello superiore è invece utile avere informazioni più dettagliate sull'esecuzione di una componente IT, per esempio il livello di occupazione di CPU di un dato server.\\
+Viene qui utilizzato un tool di Real Time Monitoring che permette di monitorare lo stato attivo e presente dell'ambiente IT attraverso una continua e costante collezione di dati e accessi. \\
+Per il monitoring abbiamo utilizzato AppOptics che ci permette di monitorare attivamente sia l'infrastruttura che le applicazioni IT.
+\subsubsection{Trend Analysis}
+Monitorare per un lungo periodo di tempo i livelli di availability dell'infrastruttura IT attraverso un tool di monitoring e salvare quei dati su di grafici, ci consente di avere delle buone stime della disponibilità dei vari servizi IT ed inoltre di identificare in un maniera proattiva dei potenziali problemi prima che essi si verifichino. Purtroppo affinchè questa tecnica sia efficace è necessario aspettare un lungo periodo di tempo per raccogliere varie informazioni e far si che le previsioni siano il più attendibili possibile.\\
+Ciò è stato realizzato attraverso il tool di monitoring AppOptics ed al suo modulo di reportage e grafici mensili.
 \subsection{Previsione dell'utilizzo e delle prestazioni del servizio}
 	Per una dettagliata analisi delle risorse IT necessarie è bene che i servizi IT che vengono utilizzati dall'istituto (che sono stati descritti nella sezione \ref{ref:scenario.applicativi}, precisamente nella tabella \ref{tab:applicativi}) siano identificati attraverso il loro utilizzo da parte degli utenti e le loro performace. \\
 
@@ -29,7 +40,9 @@ Inoltre si vuole precisare che le performance per ogni servizio sono calcolate i
 	\item efficacia del servizio,
 	\item il raggiungimento degli SLA specifici del servizio
 \end{itemize}
-La soglia minima di performance raggiunta si attesta all’85\%, al di sopra di quanto concordato negli SLA.
+La soglia minima di performance raggiunta si attesta all’85\%, al di sopra di quanto concordato negli SLA. 
+
+\newpage
 	
 	Nella tabella \ref{tab:analisiServizi} vengono identificati i servizi IT, il loro utilizzo da
 parte degli utenti attuale e quello previsto per il prossimo anno, il numero di utenti e le loro performance attuali e previste.
