@@ -73,7 +73,7 @@ parte degli utenti attuale e quello previsto per il prossimo anno, il numero di 
 \end{table}
 	
 \newpage
-\subsection{Previsione dell'utilizzo e delle prestazioni delle risorse}
+\subsection{Previsione dell'utilizzo e delle prestazioni delle risorse} \label{ref:previsione.risorse}
 In questa sezione vengono analizate le infrastrutture tecnologiche esistenti e le loro performance che sono stati descritti nella sezione \ref{ref:scenario.tecnologie}, basandoci sulle previsioni fatte. \\
 	\subsubsection{Presupposti}
 	Le performace analizzate in questa sezione riguardano l'utilizzo medio dei servizi da parte degli utenti (e quindi delle varie tecnologie), senza considerare quindi picchi improvvisi e sovraccarichi, incidenti o malfunzionamenti hardware o software.
@@ -111,7 +111,22 @@ concordemente alle percentuali di incremento calcolate.
 
 
 	\paragraph{Server}
-	Di seguito troviamo una tabella che riassume le attività di incremento delle quantità e delle performance dei server che si occupano di mantenere i servizi attivi.\\
+	La prima considerazione da effettuare riguarda il rinnovamento dell'hardware: è preferibile procedere con la sostituzione dei sistemi più critici invece che con il miglioramento di essi tramite integrazioni. Questo perchè in caso di malfunzionamenti e/o guasti la riparazione potrebbe essere difficile, i pezzi da sostituire potrebbero non essere ancora in commercio o comunque di difficile reperibilità rischiando così di allungare i tempi e i costi. \\
+	Nella tabella sottostante ritroviamo il numero e la tipologia di server da acquistare per sostituire gli hardware più critici:
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|C{2cm} | C{10cm} |} 
+			\hline
+			\rowcolor[HTML]{EFEFEF} 
+			\textbf{Quantità}  & \textbf{Server} \\ \hline
+			3 & Rack server one socket   \\ \hline
+			2 & Server di livello industriale   \\ \hline
+		\end{tabular}
+		\caption{Analisi nuovi server}\label{tab:analisiServer}
+	\end{table}
+	
+	Per i server più recenti, invece, è bene procedere con un miglioramento delle prestazioni in modo da assicurare i livelli concordati dallo SLA. Di seguito troviamo una tabella che riassume le attività di incremento delle quantità e delle performance dei server che si occupano di mantenere i servizi attivi.\\
+		Gli incrementi hardware previsti serviranno ad un miglioramento dei servizi sul lato prestazionale. \\
 	In particolare per ogni tipologia di server abbiamo:
 	\begin{itemize}
 		\item Quantità di server presenti e tutt'ora e quantità prevista per ottenere le performace di servizio per gli applicativi analizzati nella tabella \ref{tab:analisiServizi};
@@ -128,12 +143,27 @@ concordemente alle percentuali di incremento calcolate.
 			Applicazione RAP & 2 & 3 & 2& 2& 32GB & 32GB & 512GB& 1TB \\ \hline
 			Disaster Recovery & 1 & 1 & 2 & 2& 16GB& 16GB &2TB&4TB\\ \hline
 			Test & 1 & 1& 2 &  2& 16GB& 32GB& 512GB&512GB\\ \hline
-			DataBase & 2 & 3 & 2 & 4 & 16 GB & 16GB & 2TB& 3TB\\ \hline
-			Application Server & 2 & 3 & 2 & 4 & 16GB&32GB & 244GB& 1TB\\ \hline
-			Porta Applicativa SISS & 2 & 3 & 2 & 2& 16GB & 16GB & 1TB& 2TB \\ \hline
 		\end{tabular}
-		\caption{Analisi server}\label{tab:analisiServer}
 	\end{table}
 
+	\begin{table}[h]
+	\centering
+	\begin{tabular}{|C{2cm} || C{1.5cm} | C{1.5cm}|| C{1.5cm} |C{1.5cm} || C{1.5cm} |C{1.5cm}|| C{1.5cm} |C{1.5cm}|} 
+		\hline
+		\rowcolor[HTML]{EFEFEF} 
+		\textbf{Server}  &\textbf{Quantità attuale} &\textbf{Quantità prevista} & \textbf{CPU attuale} & \textbf{CPU prevista} & \textbf{RAM attuale} & \textbf{RAM prevista} & \textbf{Storage attuale} & \textbf{Storage previsto} \\ \hline
+		DataBase & 2 & 3 & 2 & 4 & 16 GB & 16GB & 2TB& 3TB\\ \hline
+		Application Server & 2 & 3 & 2 & 4 & 16GB&32GB & 244GB& 1TB\\ \hline
+		Porta Applicativa SISS & 2 & 3 & 2 & 2& 16GB & 16GB & 1TB& 2TB \\ \hline
+	\end{tabular}
+	\caption{Analisi server attuali}\label{tab:analisiServer}
+\end{table}
 
-
+\paragraph{Backup}
+Per quanto riguarda il raggiungimento dello SLA per la disponibilità del servizio 24 ore su 24 è stato stimato che i server disponibili al momento non sono sufficienti per assicurare ciò. \\
+Oltre al numero di server aggiuntivi affiancati a quelli tutt'ora presenti già esaminati nel precedente paragrafo si è preso in esame la virtualizzazione di un sistema del backup, anche per non tenere sistemi di backup e di produzione nello stesso rank. \\
+In dettaglio è bene procedere con l'acquisto di:
+\begin{itemize}
+	\item n. 4 nodi computazionali 
+	\item licenza VMware
+\end{itemize}

@@ -3,19 +3,39 @@
 \section{Costi} \label{ref:costi}
 Riassumiamo di seguito un'approssimazione dei costi che l'azienda dovrebbe effettuare per portare a compimento il piano redatto. \\
 
+\subsection{Costi hardware}
 I costi nella tabella \ref{tab:costiHardware} riguardanti le tecnologie da acquistare sono indicativi, basati sul prezzo di mercato ad oggi.\\
 	\begin{table}[h!]
 		\centering
-	\begin{tabular}{|C{3cm} || C{2cm} | C{2cm}| C{2cm} |} 
+	\begin{tabular}{|C{4cm} || C{2cm} | C{2cm}| C{3cm} |} 
 		\hline
 		\rowcolor[HTML]{EFEFEF} 
 		\textbf{Componente}  &\textbf{Quantità attuale} &\textbf{Quantità prevista} & \textbf{Costo} \\ \hline
-		Server & 10 & 14 & 4 x 500 euro\\ \hline 
+		Server & 10 & 19 & 9 x 700 euro\\ \hline 
 		CPU & 2 & 3 & 1 x 800 euro \\ \hline 
 		RAM media & 16GB & 32GB & 200 euro x4 \\ \hline 
 		Storage & 2 & 3 & 70 euro x 15 \\ \hline 
+		Licenza VMware & - & 1 & 3500 euro \\ \hline 
 	\end{tabular}
 	\caption{Analisi costi}\label{tab:costiHardware}
 \end{table} \\
-Per un costo totale di circa 4.650 euro per le nuove tecnologie da acquistare per sostenere il nuovo volume di business. \\
-In aggiunta è da calcolare il costo per la manutenzione di queste nuove tecnologie e di quelle già esistenti, descritte nella tabella \ref{tab:tecnologie}.
+
+\subsection{Costi personale aggiuntivo}
+Data la nuova configurazione prevista per l'infrastruttura tecnologia è essenziale la presenza di n. 1 tecnico che si occupi della gestione dei nuovi server. \\
+Questa figura richiede un apporto di 25.000euro/anno all'istituto. \\
+Inoltre la predisposizione iniziale, la configurazione dei nuovi hardware e l'upgrade di quelli esistenti porta a delle spese aggiuntive di 6000 euro.
+
+\subsection{Contratti di terze parti}
+Alcuni contratti in essere dovrebbero essere revisionati, in particolare:
+\begin{itemize}
+	\item il contratto con  \textbf{Sylicon Graphics}, che si occupa della manutenzione dei server e del software di base, dovrebbe essere rivisto in ottica dell'ampliamento e della sostituzione di parte dell'hardware. Ciò potrebbe non influenzare di molto il prezzo finale in quanto l'aumento del numero di server da gestire viene bilanciato dalla sostituzione degli harware più vecchi (e quindi sostituiti con server più facilmente gestibili). Si stima un aumento del costo costrattuale di 5.000 euro.
+	\item il contratto con \textbf{PMA}, che si occupa della manutenzione degli apparati di rete, deve essere modificato in modo da ottenere almeno il Gb/sec  negli switch periferici e 10Gb/sec sul core networking. Questa operazione comporterebbe fino a 30.000 euro aggiuntivi nel costo contrattuale.
+	\item il contratto con \textbf{RDZ Sistemi} che si occupa della gestione dei sistemi (software di base server, configurazione, sicurezza, dominio, backup, ecc), dell'amministratore dei sistemi e rete (ruolo SISS) e manager sicurezza (Ruolo SISS) verrrà rivisto per un incremento delle prestazioni con una maggiorazione del prezzo fino a 10.000.
+\end{itemize}
+\subsection*{Totale}
+Il prezzo totale delle modifiche da apportare per sostenere il nuovo volume di business si aggira intorno agli euro 42.495, suddivisi in:
+\begin{itemize}
+		\item 18.450 euro in nuovo hardware e costi di installazione;
+		\item 24.000 euro/anno in personale;
+		\item 45.000 euro/anno in modifiche contrattuali.
+\end{itemize}
